@@ -1,7 +1,7 @@
 # SC3: consensus  clustering of single-cell  RNA-seq data 
 
 ## WorkFlow：
-![]()
+![](https://github.com/Ts-bioinformatics/picture/blob/master/SC3.png)
 ### 第一步：输入文件
    输入文件为表达量矩阵，但是需要事先进行预处理（如标准化），以使数据可以在样本内和（或）样本间进行比较
 ### 第二步：基因过滤
@@ -17,7 +17,7 @@ and rare genes are most often not informative for clustering，即去除掉对�
   
 ### 第四步：数据转换降维  
 
-  这一步使用了两种降维方法——PCA和graph Laplacian，分别对3种距离进行降维（共计由3*2 = 6组数据）。最终选用的特征值（eigenvector）的数目定为4% ~ 7% of cells。降维同样是为了较少运算量，减少运行时间。
+  这一步使用了两种降维方法——PCA和graph Laplacian，分别对3种距离进行降维（共计由 3 * 2 = 6组数据）。最终选用的特征值（eigenvector）的数目定为4% ~ 7% of cells。降维同样是为了较少运算量，减少运行时间。
   
 ### 第五步：k-means聚类
 
