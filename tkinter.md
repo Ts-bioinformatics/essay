@@ -72,4 +72,5 @@ pip install cython # for compiling python into c
 pip install nose # unit tests
 pip install memory_profiler # great tool for tracking the line-by-line memory behavior of a script
 ```
+
 Numpy and SciPy are two important libraries for mathematical / scientific computing. You should build them from source rather than installing using pip so that way you can point to your system’s LAPACK/BLAS/ATLAS libraries. I won’t talk about doing that here.
